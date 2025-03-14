@@ -6,8 +6,7 @@ import seaborn as sns
 st.title("Nongzhanguan Air Quality Dashboard")
 
 # Load dataset
-file_path = "imputed_Nongzhanguan.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("Dashboard/imputed_Nongzhanguan.csv")
 
 # Konversi ke datetime
 df['datetime'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
